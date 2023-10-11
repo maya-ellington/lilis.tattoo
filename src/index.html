@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lilis Tattoo</title>
+    <meta name="author" content="David Grzyb" />
+    <meta name="description" content="" />
+  </script>
+
+    <!-- Tailwind -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+      .font-family-karla {
+        font-family: karla;
+      } */
+      * {
+          font-family: "e-Ukraine", sans-serif;
+        }
+    </style>
+
+    <!-- AlpineJS -->
+    <!-- <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
+      defer
+    ></script> -->
+    <!-- Font Awesome -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+      integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
+      crossorigin="anonymous"
+    ></script> -->
+  
+  <body class="bg-white font-family-sans-serif overflow-x-hidden">
+    <nav id="nav" class="fixed w-full bg-white py-4 border-b border-black p-4 flex justify-between items-center z-20">
+      <div id="placeholder" class="hidden lg:block font-semibold"></div>
+      <div class=" text-center  text-2xl lg:text-left font-light lg:text-5xl">Tattoos and Art</div>
+      <div class="flex content-center">
+        <a class="w-8 h-8 mr-10" href="https://instagram.com/lilis.tattoo">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+            <path
+              d="M 7.546875 0 C 3.390625 0 0 3.390625 0 7.546875 L 0 18.453125 C 0 22.609375 3.390625 26 7.546875 26 L 18.453125 26 C 22.609375 26 26 22.609375 26 18.453125 L 26 7.546875 C 26 3.390625 22.609375 0 18.453125 0 Z M 7.546875 2 L 18.453125 2 C 21.527344 2 24 4.46875 24 7.546875 L 24 18.453125 C 24 21.527344 21.53125 24 18.453125 24 L 7.546875 24 C 4.472656 24 2 21.53125 2 18.453125 L 2 7.546875 C 2 4.472656 4.46875 2 7.546875 2 Z M 20.5 4 C 19.671875 4 19 4.671875 19 5.5 C 19 6.328125 19.671875 7 20.5 7 C 21.328125 7 22 6.328125 22 5.5 C 22 4.671875 21.328125 4 20.5 4 Z M 13 6 C 9.144531 6 6 9.144531 6 13 C 6 16.855469 9.144531 20 13 20 C 16.855469 20 20 16.855469 20 13 C 20 9.144531 16.855469 6 13 6 Z M 13 8 C 15.773438 8 18 10.226563 18 13 C 18 15.773438 15.773438 18 13 18 C 10.226563 18 8 15.773438 8 13 C 8 10.226563 10.226563 8 13 8 Z"
+            ></path>
+          </svg>
+        </a>
+        <div class="w-6 h-6">        
+          <div id="hamburger-button" class="my-auto">
+            <div class="w-6 h-0.5 bg-black my-3"></div>
+            <div class="w-6 h-0.5 bg-black my-1"></div>
+          </div>
+        <!-- Close button (X) - initially hidden - TODO: align better-->
+        <div id="close-button" class="hidden ">
+          <div class="text-4xl font-light cursor-pointer alert-del">&times;</div>
+        </div> </div>
+
+      </div>
+    </nav>
+    <!-- Full-width nav menu (initially hidden) -->
+    <div id="nav-screen" class="hidden fixed w-full h-full pt-24 "  style="background-color: #7e7e7e;">
+      <div class="flex place-content-between">
+        <div class="left-0 pl-6 opacity-75 blur-sm">
+          <img height="100%" src="./assets/promo-img.png" />
+        </div>
+        <div class="text-white text-right uppercase pb-36 pr-4 text-2xl flex flex-col justify-center" >        
+          <a href="#about" class="py-2 hover:text-gray-300">About</a>
+          <a href="#form" class="py-2 hover:text-gray-300">Booking form</a>
+          <a href="#before" class="py-2 hover:text-gray-300">Before the session</a>
+          <a href="#after" class="py-2 hover:text-gray-300">Aftercare</a>
+          <a href="#gallery" class="py-2 hover:text-gray-300">Gallery</a>
+          <a href="#faq" class="py-2 hover:text-gray-300">FAQ</a>
+        </div>
+      </div>
+     
+    </div>
+
+  <!-- Header / About Me -->
+  <header class="w-full ">
+    <div class="w-full h-screen lg:flex lg:px-32 px-5 items-center overflow-hidden overflow-x-hidden">
+      <div class="lg:pt-28 pt-24">
+        <img  src="./assets/liliia-sobchuk_title.svg" />
+        <button class="flex flex-col left-0">
+          <div class=" text-2xl lg:text-4xl italic pt-4 pb-[-2] pl-4 z-10" style="color: #190ea7">
+            About me
+          </div>
+          <img class="absolute w-64 lg:pr-16 lg:pt-10 z-0" src="./assets/squiggle.png" alt="">
+        </button>
+      </div>
+      
+      <div class="flex flex-row-reverse pl-24 pr-2 lg:pl-64 lg:pt-32">
+        <img class="content-end lg:h-full" src="./assets/promo-img.png" />
+      </div>
+    </div>
+    <div id="animated-banner" class="w-full h-14 absolute bottom-0 py-3.5 row-anim text-white italic text-2xl" style="background: #252525" id="marquee">
+      <div style="margin-left: 0px; animation: 27.3715s linear 0s infinite normal none running marqueeAnimation-3814820;" class="js-marquee-wrapper">
+        <div class="js-marquee" style="margin-right: 25px; float: left;"></div>
+        <span style="width: 100000px;" class="absolute uppercase text-semibold text-3xl">Thanks a lot for your interest in getting some art done with me! &nbsp;&nbsp;     Thanks a lot for your interest in getting some art done with me! &nbsp;&nbsp;     Thanks a lot for your interest in getting some art done with me!     &nbsp;</span>
+      </div>
+      <style>@-webkit-keyframes marqueeAnimation-3814820  { 100%  {margin-left:-706.508px}}</style>
+    </div>
+  </header>
+    <div id="about-me">I was born in Ukraine, where I studied and received a master's degree in border guarding. All my life I’ve been involved in art. I performed in theater, graduated from music school and, of course, am a painter.
+      I started in the tattoo industry in 2020. Tattooing gives me opportunities to create something beautiful and unique, combine work with travel, and meet people from all over the world. All of that inspires me every day.
+      Botanical themes are the main direction of my art. I’m in love with nature, gradients, tiny details and stories behind tattoos. Tattooing is my passion and my way to create art.</div>
+      <div class="">
+        <img src="./assets/about-img.png" />
+      </div>
+
+      <div id="booking-form" class="">
+        <img src="sec-img_booking.png" />
+        <div>form goes here</div>
+      </div>
+
+      <div class="">
+        <img src="./assets/sec-img2_beforesession.png" />
+        <div>Dear tattoo friends
+          It is exhausting for the body to get a new tattoo, so you should follow some rules to make our session successful and painless. First of all, you should have a good night’s sleep and a good breakfast before our meeting. I recommend limiting coffee and energy drinks the day before. Make sure the area where you are getting the tattoo is not damaged- for example, sunburned, bruises, scratches, rashes, oily acne, allergic reactions. Sterility and cleanliness are extremely important in the tattooing process!
+          
+          I ask you to observe hygiene, namely, take a shower beforehand, use antiperspirant and wear clean clothes.
+          
+          Loose and practical clothing is optimal over a new tattoo. Take e.g. shorts with if you need to be tattooed on the leg, or dresses / sweaters that can be easily opened / pushed to the side, warm socks will not hurt:) Be sure to bring water, a sandwich or a packed lunch and sweets (nuts, cookies, dried fruit) . If we have a long session  planned, bring a book/tablet/headphones and a phone charger.
+          
+          In order to be hygienically correct on your arrival in our studios, hand disinfectant dispensers are available.
+          
+          Thanks again for
+          showing interest :)</div>
+      </div>
+
+    <footer class="w-full border-t  pb-12">
+      <!-- <div
+        class="relative w-full flex items-center invisible md:visible md:pb-12"
+        x-data="getCarouselData()"
+      >
+        <button
+          class="absolute bg-blue-800 hover:bg-blue-700 text-white text-2xl font-bold hover:shadow rounded-full w-16 h-16 ml-12"
+          x-on:click="decrement()"
+        >
+          &#8592;
+        </button>
+        <template
+          x-for="image in images.slice(currentIndex, currentIndex + 6)"
+          :key="images.indexOf(image)"
+        >
+          <img class="w-1/6 hover:opacity-75" :src="image" />
+        </template>
+        <button
+          class="absolute right-0 bg-blue-800 hover:bg-blue-700 text-white text-2xl font-bold hover:shadow rounded-full w-16 h-16 mr-12"
+          x-on:click="increment()"
+        >
+          &#8594;
+        </button>
+      </div> -->
+      <div class="bg-black text-white w-full container mx-auto flex flex-col items-center">
+        <div class="w-full pb-6">&copy; Created by mayaellington.co</div>
+      </div>
+    </footer>
+
+    <script>
+      // function getCarouselData() {
+      //   return {
+      //     currentIndex: 0,
+      //     images: [
+      //       'https://source.unsplash.com/collection/1346951/800x800?sig=1',
+      //       'https://source.unsplash.com/collection/1346951/800x800?sig=2',
+      //       'https://source.unsplash.com/collection/1346951/800x800?sig=3',
+      //       'https://source.unsplash.com/collection/1346951/800x800?sig=4',
+      //       'https://source.unsplash.com/collection/1346951/800x800?sig=5',
+      //       'https://source.unsplash.com/collection/1346951/800x800?sig=6',
+      //       'https://source.unsplash.com/collection/1346951/800x800?sig=7',
+      //       'https://source.unsplash.com/collection/1346951/800x800?sig=8',
+      //       'https://source.unsplash.com/collection/1346951/800x800?sig=9',
+      //     ],
+      //     increment() {
+      //       this.currentIndex =
+      //         this.currentIndex === this.images.length - 6
+      //           ? 0
+      //           : this.currentIndex + 1;
+      //     },
+      //     decrement() {
+      //       this.currentIndex =
+      //         this.currentIndex === this.images.length - 6
+      //           ? 0
+      //           : this.currentIndex - 1;
+      //     },
+      //   };
+      // }
+
+      // JavaScript to toggle hamburger button, close button, nav menu, and About Me section visibility
+      const hamburger = document.getElementById('hamburger-button');
+      const closeButton = document.getElementById('close-button');
+      const navMenu = document.getElementById('nav-screen');
+      const nav = document.getElementById('nav');
+      const aboutMeButton = document.getElementById('about-me-button');
+      const aboutMeSection = document.getElementById('about-me');
+
+
+      hamburger.addEventListener('click', () => {
+        hamburger.classList.add('hidden');
+        closeButton.classList.remove('hidden');
+        navMenu.classList.remove('hidden');
+      });
+
+      closeButton.addEventListener('click', () => {
+        hamburger.classList.remove('hidden');
+        closeButton.classList.add('hidden');
+        navMenu.classList.add('hidden');
+        aboutMeSection.classList.add('hidden');
+      });
+
+      // aboutMeButton.addEventListener('click', () => {
+      //   aboutMeSection.classList.toggle('hidden');
+      // });
+    </script>
+  </body>
+</html>
