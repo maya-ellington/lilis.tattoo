@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lilis Tattoo</title>
-    <meta name="author" content="David Grzyb" />
-    <meta name="description" content="" />
+    <meta name="author" content="Maya Ellington" />
+    <meta name="description" content="lili.tattoo website" />
+    <link rel="icon" href="src/assets/icons8-flower-doodle-32.png">
   </script>
 
     <!-- Tailwind -->
@@ -57,7 +58,7 @@
       <div class="absolute z-50 w-full h-screen opacity-60 top-0" style="background-color: #514d4d;"></div>
       <div class="flex place-content-between">
         <div class="left-0 pl-6 opacity-75 blur-sm">
-          <img height="100%" src="./assets/promo-img.png" />
+          <img height="100%" src="src/" />
         </div>
         <div id="nav-items" class="text-white text-right uppercase pb-36 pr-4 text-2xl flex flex-col justify-center z-50" >        
           <a id="about-nav" href="#about-section" class="py-2 hover:text-gray-300">About</a>
@@ -75,17 +76,17 @@
   <header class="w-full ">
     <div class="w-full h-screen lg:flex lg:px-32 px-5 items-center overflow-hidden overflow-x-hidden">
       <div class="lg:pt-28 pt-24">
-        <img  src="./assets/liliia-sobchuk_title.svg" />
+        <img  src="src/assets/liliia-sobchuk_title.svg" />
         <a id="about-button" href="#about-section" class="flex flex-col left-0">
           <div class=" text-2xl md:text-4xl italic pt-4 pb-[-2] pl-4 z-10" style="color: #190ea7">
             About me
           </div>
-          <img class="absolute md:w-64 w-32 lg:pr-16 md:pt-8 lg:pt-10 pt-9 z-0" src="./assets/squiggle1.png" alt="">
+          <img class="absolute md:w-64 w-32 lg:pr-16 md:pt-8 lg:pt-10 pt-9 z-0" src="src/assets/squiggle1.png" alt="">
         </a>
       </div>
       
       <div class="flex flex-row-reverse pl-24 pr-2 lg:pl-64 lg:pt-32">
-        <img class="content-end lg:h-full z-10" src="./assets/promo-img.png" />
+        <img class="content-end lg:h-full z-10" src="src/assets/promo-img.png" />
       </div>
     </div>
     <div id="animated-banner" class="w-full h-14 absolute bottom-0 py-3.5 row-anim text-white italic text-2xl z-20" style="background: #252525" id="marquee">
@@ -101,18 +102,17 @@
     <div class="text-xl">I was born in Ukraine, where I studied and received a master's degree in border guarding. All my life I’ve been involved in art. I performed in theater, graduated from music school and, of course, am a painter.
       I started in the tattoo industry in 2020. Tattooing gives me opportunities to create something beautiful and unique, combine work with travel, and meet people from all over the world. All of that inspires me every day.
       Botanical themes are the main direction of my art. I’m in love with nature, gradients, tiny details and stories behind tattoos. Tattooing is my passion and my way to create art.</div>
-    <img class="object-scale-down" src="./assets/about-img.png" />
+    <img class="object-scale-down" src="src/assets/about-img.png" />
   </div>
   <!--Form Section-->
   <div id="booking-form">
     <a id="form-button" href="#form-section" class="flex justify-center">
-      <img src="./assets/sec-img_booking.png" />
+      <img src="src/assets/sec-img_booking.png" />
       <svg class="absolute w-10 mt-24" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
         <path d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M37,26H26v11h-2V26H13v-2h11V13h2v11h11V26z"></path>
       </svg>
     </a>
-    <
-    <div id="form-section" class="">
+    <div id="form-section">
       <iframe
       id="JotFormIFrame-232761660066153"
       title="Tattoo Request Form"
@@ -211,7 +211,7 @@
   </div>
   <!--Before Section-->
   <a href="#before-section" id="before-button">
-    <img src="./assets/sec-img2_beforesession.png" />
+    <img src="src/assets/sec-img2_beforesession.png" />
   </a>
   <div id="before-section" class="hidden">
     <div>Dear tattoo friends,</div>
@@ -228,7 +228,7 @@
 </div>        
   <!--After Section-->
   <button id="after-button">
-    <img src="./assets/sec-img3_aftercare.png" />
+    <img src="src/assets/sec-img3_aftercare.png" />
   </button>
   <div id="after-section" class="hidden">
     <div>test</div>
@@ -343,6 +343,11 @@
         afterSection.classList.remove('hidden');
         afterButton.classList.add('hidden');
       });
+
+      onDISABLEDclick="document.getElementById('JotFormIFrame-232761660066153').style.display = 'block';"
+      onDISABLEDclick="document.getElementById('JotFormIFrame-232761660066153').style.display = 'none';"
+
+
     </script>
   </body>
 </html>
