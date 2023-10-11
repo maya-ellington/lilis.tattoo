@@ -13,6 +13,9 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
     <style>
       /* @import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
 
@@ -20,24 +23,13 @@
         font-family: karla;
       } */
       * {
-          font-family: "e-Ukraine", sans-serif;
+          font-family: 'Noto Sans', sans-serif;
         }
+      
     </style>
-
-    <!-- AlpineJS -->
-    <!-- <script
-      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"
-      defer
-    ></script> -->
-    <!-- Font Awesome -->
-    <!-- <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
-      integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs="
-      crossorigin="anonymous"
-    ></script> -->
   
-  <body class="bg-white font-family-sans-serif overflow-x-hidden">
-    <nav id="nav" class="fixed w-full bg-white py-4 border-b border-black p-4 flex justify-between items-center z-20">
+  <body class="font-family-sans-serif overflow-x-hidden" style="background-color: #efefef;">
+    <nav id="nav" class="fixed w-full bg-[#efefef] py-4 border-b border-black p-4 flex justify-between items-center z-50" style="background-color: #efefef;">
       <div id="placeholder" class="hidden lg:block font-semibold"></div>
       <div class=" text-center  text-2xl lg:text-left font-light lg:text-5xl">Tattoos and Art</div>
       <div class="flex content-center">
@@ -61,18 +53,19 @@
       </div>
     </nav>
     <!-- Full-width nav menu (initially hidden) -->
-    <div id="nav-screen" class="hidden fixed w-full h-full pt-24 "  style="background-color: #7e7e7e;">
+    <div id="nav-screen" class="hidden fixed w-full h-full pt-24 z-40 bg-white"  >
+      <div class="absolute z-50 w-full h-screen opacity-60 top-0" style="background-color: #514d4d;"></div>
       <div class="flex place-content-between">
         <div class="left-0 pl-6 opacity-75 blur-sm">
           <img height="100%" src="./assets/promo-img.png" />
         </div>
-        <div class="text-white text-right uppercase pb-36 pr-4 text-2xl flex flex-col justify-center" >        
-          <a href="#about" class="py-2 hover:text-gray-300">About</a>
-          <a href="#form" class="py-2 hover:text-gray-300">Booking form</a>
-          <a href="#before" class="py-2 hover:text-gray-300">Before the session</a>
-          <a href="#after" class="py-2 hover:text-gray-300">Aftercare</a>
-          <a href="#gallery" class="py-2 hover:text-gray-300">Gallery</a>
-          <a href="#faq" class="py-2 hover:text-gray-300">FAQ</a>
+        <div id="nav-items" class="text-white text-right uppercase pb-36 pr-4 text-2xl flex flex-col justify-center z-50" >        
+          <a id="about-nav" href="#about-section" class="py-2 hover:text-gray-300">About</a>
+          <a id="form-nav" href="#form-section" class="py-2 hover:text-gray-300">Booking form</a>
+          <a id="before-nav" href="#before-section" class="py-2 hover:text-gray-300">Before the session</a>
+          <a id="after-nav" href="#after-section" class="py-2 hover:text-gray-300">Aftercare</a>
+          <a id="gallery-nav" href="#gallery-section" class="py-2 hover:text-gray-300">Gallery</a>
+          <a id="faq-nav" href="#faq-section" class="py-2 hover:text-gray-300">FAQ</a>
         </div>
       </div>
      
@@ -83,19 +76,19 @@
     <div class="w-full h-screen lg:flex lg:px-32 px-5 items-center overflow-hidden overflow-x-hidden">
       <div class="lg:pt-28 pt-24">
         <img  src="./assets/liliia-sobchuk_title.svg" />
-        <button class="flex flex-col left-0">
-          <div class=" text-2xl lg:text-4xl italic pt-4 pb-[-2] pl-4 z-10" style="color: #190ea7">
+        <a id="about-button" href="#about-section" class="flex flex-col left-0">
+          <div class=" text-2xl md:text-4xl italic pt-4 pb-[-2] pl-4 z-10" style="color: #190ea7">
             About me
           </div>
-          <img class="absolute w-64 lg:pr-16 lg:pt-10 z-0" src="./assets/squiggle.png" alt="">
-        </button>
+          <img class="absolute md:w-64 w-32 lg:pr-16 md:pt-8 lg:pt-10 pt-9 z-0" src="./assets/squiggle1.png" alt="">
+        </a>
       </div>
       
       <div class="flex flex-row-reverse pl-24 pr-2 lg:pl-64 lg:pt-32">
-        <img class="content-end lg:h-full" src="./assets/promo-img.png" />
+        <img class="content-end lg:h-full z-10" src="./assets/promo-img.png" />
       </div>
     </div>
-    <div id="animated-banner" class="w-full h-14 absolute bottom-0 py-3.5 row-anim text-white italic text-2xl" style="background: #252525" id="marquee">
+    <div id="animated-banner" class="w-full h-14 absolute bottom-0 py-3.5 row-anim text-white italic text-2xl z-20" style="background: #252525" id="marquee">
       <div style="margin-left: 0px; animation: 27.3715s linear 0s infinite normal none running marqueeAnimation-3814820;" class="js-marquee-wrapper">
         <div class="js-marquee" style="margin-right: 25px; float: left;"></div>
         <span style="width: 100000px;" class="absolute uppercase text-semibold text-3xl">Thanks a lot for your interest in getting some art done with me! &nbsp;&nbsp;     Thanks a lot for your interest in getting some art done with me! &nbsp;&nbsp;     Thanks a lot for your interest in getting some art done with me!     &nbsp;</span>
@@ -103,99 +96,215 @@
       <style>@-webkit-keyframes marqueeAnimation-3814820  { 100%  {margin-left:-706.508px}}</style>
     </div>
   </header>
-    <div id="about-me">I was born in Ukraine, where I studied and received a master's degree in border guarding. All my life I’ve been involved in art. I performed in theater, graduated from music school and, of course, am a painter.
+  <!--About Section-->
+  <div id="about-section" class="h-screen hidden flex flex-col lg:flex-row  py-10 px-4 items-center justify-center">
+    <div class="text-xl">I was born in Ukraine, where I studied and received a master's degree in border guarding. All my life I’ve been involved in art. I performed in theater, graduated from music school and, of course, am a painter.
       I started in the tattoo industry in 2020. Tattooing gives me opportunities to create something beautiful and unique, combine work with travel, and meet people from all over the world. All of that inspires me every day.
       Botanical themes are the main direction of my art. I’m in love with nature, gradients, tiny details and stories behind tattoos. Tattooing is my passion and my way to create art.</div>
-      <div class="">
-        <img src="./assets/about-img.png" />
-      </div>
-
-      <div id="booking-form" class="">
-        <img src="sec-img_booking.png" />
-        <div>form goes here</div>
-      </div>
-
-      <div class="">
-        <img src="./assets/sec-img2_beforesession.png" />
-        <div>Dear tattoo friends
-          It is exhausting for the body to get a new tattoo, so you should follow some rules to make our session successful and painless. First of all, you should have a good night’s sleep and a good breakfast before our meeting. I recommend limiting coffee and energy drinks the day before. Make sure the area where you are getting the tattoo is not damaged- for example, sunburned, bruises, scratches, rashes, oily acne, allergic reactions. Sterility and cleanliness are extremely important in the tattooing process!
-          
-          I ask you to observe hygiene, namely, take a shower beforehand, use antiperspirant and wear clean clothes.
-          
-          Loose and practical clothing is optimal over a new tattoo. Take e.g. shorts with if you need to be tattooed on the leg, or dresses / sweaters that can be easily opened / pushed to the side, warm socks will not hurt:) Be sure to bring water, a sandwich or a packed lunch and sweets (nuts, cookies, dried fruit) . If we have a long session  planned, bring a book/tablet/headphones and a phone charger.
-          
-          In order to be hygienically correct on your arrival in our studios, hand disinfectant dispensers are available.
-          
-          Thanks again for
-          showing interest :)</div>
-      </div>
-
+    <img class="object-scale-down" src="./assets/about-img.png" />
+  </div>
+  <!--Form Section-->
+  <div id="booking-form">
+    <a id="form-button" href="#form-section" class="flex justify-center">
+      <img src="./assets/sec-img_booking.png" />
+      <svg class="absolute w-10 mt-24" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 50 50">
+        <path d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M37,26H26v11h-2V26H13v-2h11V13h2v11h11V26z"></path>
+      </svg>
+    </a>
+    <
+    <div id="form-section" class="">
+      <iframe
+      id="JotFormIFrame-232761660066153"
+      title="Tattoo Request Form"
+      onload="window.parent.scrollTo(0,0)"
+      allowtransparency="true"
+      allowfullscreen="true"
+      allow="geolocation; microphone; camera"
+      src="https://form.jotform.com/232761660066153"
+      frameborder="0"
+      style="min-width:100%;max-width:100%;height:539px;border:none;"
+      scrolling="no"></iframe>
+      <script type="text/javascript">
+      var ifr = document.getElementById("JotFormIFrame-232761660066153");
+      if (ifr) {
+        var src = ifr.src;
+        var iframeParams = [];
+        if (window.location.href && window.location.href.indexOf("?") > -1) {
+          iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
+        }
+        if (src && src.indexOf("?") > -1) {
+          iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
+          src = src.substr(0, src.indexOf("?"))
+        }
+        iframeParams.push("isIframeEmbed=1");
+        ifr.src = src + "?" + iframeParams.join('&');
+      }
+      window.handleIFrameMessage = function(e) {
+        if (typeof e.data === 'object') { return; }
+        var args = e.data.split(":");
+        if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
+        if (!iframe) { return; }
+        switch (args[0]) {
+          case "scrollIntoView":
+            iframe.scrollIntoView();
+            break;
+          case "setHeight":
+            iframe.style.height = args[1] + "px";
+            if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
+              iframe.style.minHeight = args[1] + "px";
+            }
+            break;
+          case "collapseErrorPage":
+            if (iframe.clientHeight > window.innerHeight) {
+              iframe.style.height = window.innerHeight + "px";
+            }
+            break;
+          case "reloadPage":
+            window.location.reload();
+            break;
+          case "loadScript":
+            if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
+            var src = args[1];
+            if (args.length > 3) {
+                src = args[1] + ':' + args[2];
+            }
+            var script = document.createElement('script');
+            script.src = src;
+            script.type = 'text/javascript';
+            document.body.appendChild(script);
+            break;
+          case "exitFullscreen":
+            if      (window.document.exitFullscreen)        window.document.exitFullscreen();
+            else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
+            else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
+            else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
+            else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
+            break;
+        }
+        var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
+        if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
+          var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
+          iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
+        }
+      };
+      window.isPermitted = function(originUrl, whitelisted_domains) {
+        var url = document.createElement('a');
+        url.href = originUrl;
+        var hostname = url.hostname;
+        var result = false;
+        if( typeof hostname !== 'undefined' ) {
+          whitelisted_domains.forEach(function(element) {
+              if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
+                  result = true;
+              }
+          });
+          return result;
+        }
+      };
+      if (window.addEventListener) {
+        window.addEventListener("message", handleIFrameMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onmessage", handleIFrameMessage);
+      }
+      </script>
+    </div>
+  </div>
+  <!--Before Section-->
+  <a href="#before-section" id="before-button">
+    <img src="./assets/sec-img2_beforesession.png" />
+  </a>
+  <div id="before-section" class="hidden">
+    <div>Dear tattoo friends,</div>
+    <div>It is exhausting for the body to get a new tattoo, so you should follow some rules to make our session successful and painless. First of all, you should have a good night’s sleep and a good breakfast before our meeting. I recommend limiting coffee and energy drinks the day before. Make sure the area where you are getting the tattoo is not damaged- for example, sunburned, bruises, scratches, rashes, oily acne, allergic reactions. Sterility and cleanliness are extremely important in the tattooing process!
+    
+    I ask you to observe hygiene, namely, take a shower beforehand, use antiperspirant and wear clean clothes.
+    
+    Loose and practical clothing is optimal over a new tattoo. Take e.g. shorts with if you need to be tattooed on the leg, or dresses / sweaters that can be easily opened / pushed to the side, warm socks will not hurt:) Be sure to bring water, a sandwich or a packed lunch and sweets (nuts, cookies, dried fruit) . If we have a long session  planned, bring a book/tablet/headphones and a phone charger.
+    
+    In order to be hygienically correct on your arrival in our studios, hand disinfectant dispensers are available.</div>
+    
+    <div>Thanks again for
+    showing interest :)</div>
+</div>        
+  <!--After Section-->
+  <button id="after-button">
+    <img src="./assets/sec-img3_aftercare.png" />
+  </button>
+  <div id="after-section" class="hidden">
+    <div>test</div>
+  </div>          
+<!--Gallery Section-->
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid gap-4">
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
+        </div>
+    </div>
+</div>
     <footer class="w-full border-t  pb-12">
-      <!-- <div
-        class="relative w-full flex items-center invisible md:visible md:pb-12"
-        x-data="getCarouselData()"
-      >
-        <button
-          class="absolute bg-blue-800 hover:bg-blue-700 text-white text-2xl font-bold hover:shadow rounded-full w-16 h-16 ml-12"
-          x-on:click="decrement()"
-        >
-          &#8592;
-        </button>
-        <template
-          x-for="image in images.slice(currentIndex, currentIndex + 6)"
-          :key="images.indexOf(image)"
-        >
-          <img class="w-1/6 hover:opacity-75" :src="image" />
-        </template>
-        <button
-          class="absolute right-0 bg-blue-800 hover:bg-blue-700 text-white text-2xl font-bold hover:shadow rounded-full w-16 h-16 mr-12"
-          x-on:click="increment()"
-        >
-          &#8594;
-        </button>
-      </div> -->
       <div class="bg-black text-white w-full container mx-auto flex flex-col items-center">
         <div class="w-full pb-6">&copy; Created by mayaellington.co</div>
       </div>
     </footer>
 
     <script>
-      // function getCarouselData() {
-      //   return {
-      //     currentIndex: 0,
-      //     images: [
-      //       'https://source.unsplash.com/collection/1346951/800x800?sig=1',
-      //       'https://source.unsplash.com/collection/1346951/800x800?sig=2',
-      //       'https://source.unsplash.com/collection/1346951/800x800?sig=3',
-      //       'https://source.unsplash.com/collection/1346951/800x800?sig=4',
-      //       'https://source.unsplash.com/collection/1346951/800x800?sig=5',
-      //       'https://source.unsplash.com/collection/1346951/800x800?sig=6',
-      //       'https://source.unsplash.com/collection/1346951/800x800?sig=7',
-      //       'https://source.unsplash.com/collection/1346951/800x800?sig=8',
-      //       'https://source.unsplash.com/collection/1346951/800x800?sig=9',
-      //     ],
-      //     increment() {
-      //       this.currentIndex =
-      //         this.currentIndex === this.images.length - 6
-      //           ? 0
-      //           : this.currentIndex + 1;
-      //     },
-      //     decrement() {
-      //       this.currentIndex =
-      //         this.currentIndex === this.images.length - 6
-      //           ? 0
-      //           : this.currentIndex - 1;
-      //     },
-      //   };
-      // }
 
       // JavaScript to toggle hamburger button, close button, nav menu, and About Me section visibility
       const hamburger = document.getElementById('hamburger-button');
       const closeButton = document.getElementById('close-button');
       const navMenu = document.getElementById('nav-screen');
       const nav = document.getElementById('nav');
-      const aboutMeButton = document.getElementById('about-me-button');
-      const aboutMeSection = document.getElementById('about-me');
+      const aboutButton = document.getElementById('about-button');
+      const aboutNav = document.getElementById('about-nav');
+      const aboutMeSection = document.getElementById('about-section');
+      const formButton = document.getElementById('form-button,');
+      const formSection = document.getElementById('form-section');
+      const formNav = document.getElementById('form-nav');
+      const beforeSection = document.getElementById('before-section');
+      const beforeButton = document.getElementById('before-button,');
+      const beforeNav = document.getElementById('before-nav');
+      const afterSection = document.getElementById('after-section');
+      const afterButton = document.getElementById('after-button,');
+      const afterNav = document.getElementById('after-nav');
 
 
       hamburger.addEventListener('click', () => {
@@ -208,12 +317,32 @@
         hamburger.classList.remove('hidden');
         closeButton.classList.add('hidden');
         navMenu.classList.add('hidden');
-        aboutMeSection.classList.add('hidden');
       });
 
-      // aboutMeButton.addEventListener('click', () => {
-      //   aboutMeSection.classList.toggle('hidden');
-      // });
+      navMenu.addEventListener('click', () => {
+        hamburger.classList.remove('hidden');
+        closeButton.classList.add('hidden');
+        navMenu.classList.add('hidden');
+      });
+
+      aboutButton.addEventListener('click', () => {
+        aboutMeSection.classList.remove('hidden');
+      });      
+      
+      formButton.addEventListener('click', () => {
+        formSection.classList.remove('hidden');
+        formButton.classList.add('hidden');
+      });
+
+      beforeButton.addEventListener('click', () => {
+        beforeSection.classList.remove('hidden');
+        beforeButton.classList.add('hidden');
+      });
+
+      afterButton.addEventListener('click', () => {
+        afterSection.classList.remove('hidden');
+        afterButton.classList.add('hidden');
+      });
     </script>
   </body>
 </html>
