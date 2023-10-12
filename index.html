@@ -162,7 +162,7 @@
           <div class="js-marquee" style="margin-right: 25px; float: left"></div>
           <span
             style="width: 100000px"
-            class="absolute uppercase text-semibold text-xl md:text-3xl pb-12 md:pb-8"
+            class="absolute uppercase text-semibold text-xl md:text-3xl pb-12 md:pb-8 overflow-y-hidden"
             >Thanks a lot for your interest in getting some art done with me!
             &nbsp;&nbsp; Thanks a lot for your interest in getting some art done
             with me! &nbsp;&nbsp; Thanks a lot for your interest in getting some
@@ -179,34 +179,59 @@
       </div>
     </header>
     <!--About Section-->
-    <div id="about-section" class="hidden">
-      <div
-        class="flex flex-col lg:flex-row px-4 pt-20 pb-6 items-center justify-center"
-      >
-        <div class="text-xl">
-          I was born in Ukraine, where I studied and received a master's degree
-          in border guarding. All my life I’ve been involved in art. I performed
-          in theater, graduated from music school and, of course, am a painter.
-          I started in the tattoo industry in 2020. Tattooing gives me
-          opportunities to create something beautiful and unique, combine work
-          with travel, and meet people from all over the world. All of that
-          inspires me every day. Botanical themes are the main direction of my
-          art. I’m in love with nature, gradients, tiny details and stories
-          behind tattoos. Tattooing is my passion and my way to create art.
+    <div id="body-content" class="z-10">
+      <div id="about-section" class="hidden">
+        <div
+          class="flex flex-col lg:flex-row px-4 pt-20 pb-6 items-center justify-center"
+        >
+          <div class="text-xl">
+            I was born in Ukraine, where I studied and received a master's degree
+            in border guarding. All my life I’ve been involved in art. I performed
+            in theater, graduated from music school and, of course, am a painter.
+            I started in the tattoo industry in 2020. Tattooing gives me
+            opportunities to create something beautiful and unique, combine work
+            with travel, and meet people from all over the world. All of that
+            inspires me every day. Botanical themes are the main direction of my
+            art. I’m in love with nature, gradients, tiny details and stories
+            behind tattoos. Tattooing is my passion and my way to create art.
+          </div>
+          <img class="object-scale-down" src="src/assets/about-img.png" />
         </div>
-        <img class="object-scale-down" src="src/assets/about-img.png" />
       </div>
-    </div>
-    <!-- <div id="about-placement" class=""></div> -->
-
-    <!--Form Section-->
-    <div id="booking-form" class="md:py-3  px-2 md:px-8">
+      <!-- <div id="about-placement" class=""></div> -->
+  
+      <!--Form Section-->
+      <div id="booking-form" class="md:py-3  px-2 md:px-8">
+        <a
+          id="form-button"
+          href="#form-section"
+          class="flex justify-center items-end"
+        >
+          <img src="src/assets/sec-img_booking.png" />
+          <!-- <svg
+            class="absolute md:w-12 lg:w-14 w-8 pt-10 md:pt-0 opacity-80"
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="100"
+            height="100"
+            viewBox="0 0 50 50"
+          >
+            <path
+              d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M37,26H26v11h-2V26H13v-2h11V13h2v11h11V26z"
+            ></path>
+          </svg> -->
+        </a>
+      </div>
+      <div id="booking-placement" class="py-4 md:py-10"></div>
+  
+      <!--Before Section-->
       <a
-        id="form-button"
-        href="#form-section"
-        class="flex justify-center items-end"
+        id="before-button"
+        href="#before-placement"
+        class="md:py-3 px-2 md:px-8 flex justify-center items-end"
       >
-        <img src="src/assets/sec-img_booking.png" />
+        <img src="src/assets/sec-img2_beforesession.png" />
         <!-- <svg
           class="absolute md:w-12 lg:w-14 w-8 pt-10 md:pt-0 opacity-80"
           xmlns="http://www.w3.org/2000/svg"
@@ -221,598 +246,576 @@
           ></path>
         </svg> -->
       </a>
-    </div>
-    <div id="booking-placement" class="py-4 md:py-10"></div>
-
-    <!--Before Section-->
-    <a
-      id="before-button"
-      href="#before-placement"
-      class="md:py-3 px-2 md:px-8 flex justify-center items-end"
-    >
-      <img src="src/assets/sec-img2_beforesession.png" />
-      <!-- <svg
-        class="absolute md:w-12 lg:w-14 w-8 pt-10 md:pt-0 opacity-80"
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="100"
-        height="100"
-        viewBox="0 0 50 50"
+      <div id="before-placement" class="py-4 md:py-10"></div>
+      <button
+        id="before-next-button"
+        class="w-full bg-black py-6 text-white uppercase text-3xl hidden"
       >
-        <path
-          d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M37,26H26v11h-2V26H13v-2h11V13h2v11h11V26z"
-        ></path>
-      </svg> -->
-    </a>
-    <div id="before-placement" class="py-4 md:py-10"></div>
-    <button
-      id="before-next-button"
-      class="w-full bg-black py-6 text-white uppercase text-3xl hidden"
-    >
-      Before the Session
-    </button>
-    <div id="before-section" class="hidden py-16 px-6 lg:px-48 lg:py-32">
-      <div class="cursive text-6xl pb-4">Dear tattoo friends,</div>
-      <div class="pb-4">
-        It is exhausting for the body to get a new tattoo, so you should follow
-        some rules to make our session successful and painless. First of all,
-        you should have a good night’s sleep and a good breakfast before our
-        meeting. I recommend limiting coffee and energy drinks the day before.
-        Make sure the area where you are getting the tattoo is not damaged- for
-        example, sunburned, bruises, scratches, rashes, oily acne, allergic
-        reactions. Sterility and cleanliness are extremely important in the
-        tattooing process! I ask you to observe hygiene, namely, take a shower
-        beforehand, use antiperspirant and wear clean clothes. Loose and
-        practical clothing is optimal over a new tattoo. Take e.g. shorts with
-        if you need to be tattooed on the leg, or dresses / sweaters that can be
-        easily opened / pushed to the side, warm socks will not hurt:) Be sure
-        to bring water, a sandwich or a packed lunch and sweets (nuts, cookies,
-        dried fruit) . If we have a long session planned, bring a
-        book/tablet/headphones and a phone charger. In order to be hygienically
-        correct on your arrival in our studios, hand disinfectant dispensers are
-        available.
+        Before the Session
+      </button>
+      <div id="before-section" class="hidden py-16 px-6 lg:px-48 lg:py-32">
+        <div class="cursive text-6xl pb-4">Dear tattoo friends,</div>
+        <div class="pb-4">
+          It is exhausting for the body to get a new tattoo, so you should follow
+          some rules to make our session successful and painless. First of all,
+          you should have a good night’s sleep and a good breakfast before our
+          meeting. I recommend limiting coffee and energy drinks the day before.
+          Make sure the area where you are getting the tattoo is not damaged- for
+          example, sunburned, bruises, scratches, rashes, oily acne, allergic
+          reactions. Sterility and cleanliness are extremely important in the
+          tattooing process! I ask you to observe hygiene, namely, take a shower
+          beforehand, use antiperspirant and wear clean clothes. Loose and
+          practical clothing is optimal over a new tattoo. Take e.g. shorts with
+          if you need to be tattooed on the leg, or dresses / sweaters that can be
+          easily opened / pushed to the side, warm socks will not hurt:) Be sure
+          to bring water, a sandwich or a packed lunch and sweets (nuts, cookies,
+          dried fruit) . If we have a long session planned, bring a
+          book/tablet/headphones and a phone charger. In order to be hygienically
+          correct on your arrival in our studios, hand disinfectant dispensers are
+          available.
+        </div>
+        <div class="cursive text-6xl">Thanks again for showing interest :)</div>
       </div>
-      <div class="cursive text-6xl">Thanks again for showing interest :)</div>
-    </div>
-    <!--After Section-->
-    <a
-      href="#after-placement"
-      id="after-button"
-      class="md:py-3 px-2 md:px-8 flex justify-end items-end"
-    >
-      <img src="src/assets/sec-img3_aftercare.png" />
-      <!-- <svg
-        class="absolute md:w-12 lg:w-14 w-8 pt-10 md:pt-0 mr-32 mb-14 opacity-80"
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="100"
-        height="100"
-        viewBox="0 0 50 50"
+      <!--After Section-->
+      <a
+        href="#after-placement"
+        id="after-button"
+        class="md:py-3 px-2 md:px-8 flex justify-end items-end"
       >
-        <path
-          d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M37,26H26v11h-2V26H13v-2h11V13h2v11h11V26z"
-        ></path>
-      </svg> -->
-    </a>
-    <div id="after-placement" class="py-4 md:py-10"></div>
-    <button
-      id="after-next-button"
-      class="w-full bg-black py-6 text-white uppercase text-3xl hidden"
-    >
-      After the Session
-    </button>
-    <div id="after-section" class="hidden py-16 px-4 lg:px-16">
-      <!--2 columns lg, 1 smaller-->
-      <div class="text-center text-sm lg:text-lg md:px-28" style="color: #190ea7">
-        AFTERCARE PLAYS A HUGE PART IN THE FINAL APPEARANCE OF YOUR TATTOO.
-        PLEASE READ THE LISTS BELOW AND FOLLOW THEM CAREFULLY.
-      </div>
-      <div class="text-md pt-10 pb-8 md:pr-48">
-        The artist will always apply a film to your new tattoo to keep out dirt
-        and bacteria while the tattoo is fresh. There are two types of film used
-        for this – Cling film and specially developed adhesive films for
-        tattoo/wound healing.
-      </div>
-      <div class="grid gap-8 lg:grid-cols-2">
-        <div class="w-full border border-black px-6 py-6">
-          <div class="text-3xl">CLING FILM</div>
-          <div class="py-4 text-xs">
-            We recommend that you keep clinging film on your fresh tattoo for
-            the first three hours unless instructed otherwise by your artist.
-            You can reapply the film for the first night, to keep out bacteria.
-            However, it is important not to wrap it too tightly as the tattoo
-            needs to breathe and you don’t want to be sweating on the tattooed
-            area. Your tattoo it is a large open wound with no protective layer
-            on it.
-          </div>
-          <div class="font-black">WHEN YOU REMOVE THE CLING FILM:</div>
-          <ul class="pl-5 text-xs" style="list-style-type: disc">
-            <li class="py-1">
-              Wash your tattoo with mild/non-scented soap immediately.
-            </li>
-            <li class="py-1">
-              Use your hands to rub off all the extra ink, blood, and plasma.
-            </li>
-            <li class="py-1">Do not rub it with a towel – it will hurt!</li>
-            <li class="py-1">
-              Tap dry very gently with a CLEAN towel or soft tissue.
-            </li>
-            <li class="py-1">
-              Wash your hands and apply a very thin layer of moisturizer to the
-              tattooed area.
-            </li>
-            <li class="py-1">
-              It is important not to use too much moisturizer as the tattoo
-              needs to breathe.
-            </li>
-            <lic lass="py-1">
-              When using the correct amount, the moisturizer should almost not
-              be visible after being smeared out on the area.
-            </li>
-            <li class="py-1">
-              Repeat this process 4-5 times daily for two weeks. If you feel any
-              discomfort or feel like something is going wrong, send me an email
-              with a picture.
-            </li>
-            <li class="py-1">
-              Make sure you go to the doctor if you have high fever or see any
-              signs of infection.
-            </li>
-          </ul>
-        </div>
-        <div class="w-full border border-black px-6 py-6">
-          <div class="text-3xl">ADHESIVE FILM</div>
-          <div class="cursive text-4xl">(second skin)</div>
-          <div class="py-4 text-xs">It is waterproof.</div>
-          <div class="py-4 text-xs">
-            Feel free to take showers with it (yay!) We recommend that you keep
-            the film on for 3-4 days. You might see discharges appearing and
-            your tattoo might look “smudged“ under second skin. It is totally
-            normal. If you bleed much or if there’s a lot of liquid under the
-            film, you should take it off immediately to avoid infection. We
-            recommend you only do this by applying lukewarm water on top of the
-            film, to loosen the adhesive. Don’t just pull it off, as it could
-            hurt your skin.
-          </div>
-          <div class="font-black">
-            AFTER 3-4 DAYS PLEASE PEEL OFF THE SECOND SKIN AND SHOWER:
-          </div>
-          <ul class="pl-5 text-xs" style="list-style-type: disc">
-            <li class="py-1">
-              Wash your tattoo with mild/non-scented soap immediately (Your
-              tattoo might get “printed“ onto second skin when you peel it off.
-              It is normal too. Your tattoo is still there:))).
-            </li>
-            <li class="py-1">
-              Use your hands to rub off all the extra ink, blood, and plasma.
-            </li>
-            <li class="py-1">Do not rub it with a towel – it will hurt!</li>
-            <li class="py-1">
-              Tap dry very gently with a CLEAN towel or soft tissue.
-            </li>
-            <li class="py-1">
-              Wash your hands and apply a very thin layer of moisturizer to the
-              tattooed area.
-            </li>
-            <li class="py-1">
-              It is important not to use too much moisturizer as the tattoo
-              needs to breathe.
-            </li>
-            <li class="py-1">
-              When using the correct amount, the moisturizer should almost not
-              be visible after being smeared out on the area.
-            </li>
-            <li class="py-1">
-              Repeat this process 4-5 times daily for two weeks. If you feel any
-              discomfort or feel like something is going wrong, send me an email
-              with a picture.
-            </li>
-            <li class="py-1">
-              Make sure you go to the doctor if you have high fever or see any
-              signs of infection.
-            </li>
-          </ul>
-        </div>
-        <div class="w-full border border-black px-6 py-6">
-          <div class="text-3xl">ONE WEEK</div>
-          <div class="cursive text-4xl pt-4">after session</div>
-
-          <div class="py-4 text-xs">
-            Scabs will start to form. Your tattoo might appear flaky.
-            <b>DON’T PICK AT THEM.</b>
-          </div>
-          <div class="py-4 text-xs">
-            You might pick the ink out of your skin and the tattoo will heal
-            poorly. Some flakes might appear to be black. It looks weird but it
-            is totally normal.
-          </div>
-          <div class="py-4 text-xs">
-            Your tattoo might feel itchy as the flakes keep forming.
-            <b>DON’T SCRATCH IT.</b> Same thing, you might damage your tattoo by
-            doing so. Gently pat or rub on it (with clean hands!)
-          </div>
-          <div class="py-4 text-xs">
-            Once again, keep your tattoo clean! Protective layer is forming, but
-            that doesn’t mean your tattoo is safe for your cat to lick, yet.
-          </div>
-        </div>
-        <div class="w-full border border-black px-6 py-6">
-          <div class="text-3xl">GENERAL RULES</div>
-          <div class="text-lg py-4">THE HEALING PROCESS WILL TAKE UP TO 4 WEEKS. PLEASE FOLLOW INSTRUCTIONS THROUGHOUT THIS PERIOD OF TIME AND BE PATIENT WITH YOUR SKIN.</div>
-          
-          <ul class="pl-5 text-xs" style="list-style-type: disc">
-            <li class="py-1">
-              Avoid direct sunlight on the new tattoo.
-
-            </li>
-            <li class="py-1">
-              NO SUNSCREEN WHEN YOUR TATTOO IS STILL HEALING. (However, please always apply strong sunscreen on your tattoo AFTER it’s healed, if you are going to have sun exposure.)            </li>
-            <li class="py-1">Do not rub it with a towel – it will hurt!</li>
-            <li class="py-1">
-              Avoid soaking your tattoo in water – no bathing, no swimming, no surfing, no diving, no sauna, etc.            </li>
-            <li class="py-1">
-              Stop exercising for at least 3 days as your sweat can soak it too.If you have a pet, keep them away from your tattoo. Especially avoid contact with their fur and saliva.
-            </li>
-            <li class="py-1">
-              ALWAYS HANDLE YOUR NEW TATTOO WITH CLEAN HANDS. Ointment options: Cetaphil, Aquaphor, Vitamin A & D lotion. All non-scented. No vaseline. No Neosporin. No aloe vera. No oil based lotion.
-            </li>
-            <li class="py-1">
-              If you suspect your tattoo is getting infected, ASK A DOCTOR IMMEDIATELY.
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <!--Gallery Section-->
-    <a
-      href="#gallery-placement"
-      id="gallery-button"
-      class="md:py-3 px-2 md:px-8 flex justify-center items-end"
-    >
-      <img src="src/assets/sec-img4_gallery.png" />
-      <!-- <svg
-        class="absolute md:w-12 lg:w-14 w-8 pt-10 md:pt-0 opacity-80"
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="100"
-        height="100"
-        viewBox="0 0 50 50"
+        <img src="src/assets/sec-img3_aftercare.png" />
+        <!-- <svg
+          class="absolute md:w-12 lg:w-14 w-8 pt-10 md:pt-0 mr-32 mb-14 opacity-80"
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="100"
+          height="100"
+          viewBox="0 0 50 50"
+        >
+          <path
+            d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M37,26H26v11h-2V26H13v-2h11V13h2v11h11V26z"
+          ></path>
+        </svg> -->
+      </a>
+      <div id="after-placement" class="py-4 md:py-10"></div>
+      <button
+        id="after-next-button"
+        class="w-full bg-black py-6 text-white uppercase text-3xl hidden"
       >
-        <path
-          d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M37,26H26v11h-2V26H13v-2h11V13h2v11h11V26z"
-        ></path>
-      </svg> -->
-    </a>
-    <div id="gallery-placement" class="py-4 md:py-10"></div>
-    <button
-      id="gallery-next-button"
-      class="w-full bg-black py-6 text-white uppercase text-3xl hidden"
-    >
-      Gallery
-    </button>
-    <div
-      id="gallery-section"
-      class="grid grid-cols-2 md:grid-cols-4 gap-4 hidden mt-10  px-8"
-    >
-      <div class="grid gap-4">
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg resize-none"
-            src="src/assets/tattoos/IMG_4547.JPG"
-            alt=""
-          />
+        After the Session
+      </button>
+      <div id="after-section" class="hidden py-16 px-4 lg:px-16">
+        <!--2 columns lg, 1 smaller-->
+        <div class="text-center text-sm lg:text-lg md:px-28" style="color: #190ea7">
+          AFTERCARE PLAYS A HUGE PART IN THE FINAL APPEARANCE OF YOUR TATTOO.
+          PLEASE READ THE LISTS BELOW AND FOLLOW THEM CAREFULLY.
         </div>
-        <div class="">
-          <img
-            class="h-auto max-w-full rounded-lg resize-none"
-            src="src/assets/tattoos/IMG_4567.JPG"
-            alt=""
-          />
+        <div class="text-md pt-10 pb-8 md:pr-48">
+          The artist will always apply a film to your new tattoo to keep out dirt
+          and bacteria while the tattoo is fresh. There are two types of film used
+          for this – Cling film and specially developed adhesive films for
+          tattoo/wound healing.
         </div>
-        <div class="hidden md:block">
-          <img
-            class="h-auto max-w-full rounded-lg resize-none"
-            src="src/assets/tattoos/IMG_4557.JPG"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="grid gap-4">
-        <div class="hidden md:block">
-          <img
-            class=" h-5/6 max-w-full rounded-lg resize-none"
-            src="src/assets/tattoos/IMG_4561.JPG"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg resize-none mt-16 md:mt-0"
-            src="src/assets/tattoos/IMG_4549.JPG"
-            alt=""
-          />
-        </div>
-        <div class="hidden md:block">
-          <img
-            class="h-auto max-w-full rounded-lg resize-none"
-            src="src/assets/tattoos/IMG_4564.JPG"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="grid gap-4">
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg resize-none"
-            src="src/assets/tattoos/IMG_4556.JPG"
-            alt=""
-          />
-        </div>
-        <div class="">
-          <img
-            class="h-auto max-w-full rounded-lg resize-none"
-            src="src/assets/tattoos/IMG_4564.JPG"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg resize-none"
-            src="src/assets/tattoos/IMG_4548.JPG"
-            alt=""
-          />
-        </div>
-      </div>
-      <div class="grid gap-4">
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg resize-none"
-            src="src/assets/tattoos/IMG_4566.JPG"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg resize-none"
-            src="src/assets/tattoos/IMG_4554.JPG"
-            alt=""
-          />
-        </div>
-        <div>
-          <img
-            class="h-auto max-w-full rounded-lg resize-none"
-            src="src/assets/tattoos/IMG_4550.JPG"
-            alt=""
-          />
-        </div>
-      </div>
-    </div>
-    <!--FAQ Section-->
-    <a
-      id="faq-button"
-      href="#faq-placement"
-      class="md:py-3 px-8 pt-6 flex justify-center items-end"
-    >
-      <img src="src/assets/sec-img5_faq_.png" />
-      <!-- <svg
-        class="absolute md:w-12 lg:w-14 w-8 pt-[-4] opacity-80 "
-        xmlns="http://www.w3.org/2000/svg"
-        x="0px"
-        y="0px"
-        width="100"
-        height="100"
-        viewBox="0 0 50 50"
-      >
-        <path
-          d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M37,26H26v11h-2V26H13v-2h11V13h2v11h11V26z"
-        ></path>
-      </svg> -->
-    </a>
-    <div id="faq-placement" class="py-4 md:py-10"></div>
-    <button
-      id="faq-next-button"
-      class="w-full bg-black py-6 text-white uppercase text-3xl hidden"
-    >
-      FAQ
-    </button>
-    <div id="faq-section" class="hidden py-16">
-      <div class="max-w-md mx-auto mt-24">
-        <!-- FAQ 1 -->
-        <div class="overflow-hidden">
-            <div class=" p-4 cursor-pointer flex justify-between items-center" onclick="toggleAccordion(1)">
-                <h3 class="font-semibold text-lg">WHEN CAN I SEE THE DESIGN?</h3>
-                <span class="transform transition-transform" id="arrow-icon-1">▼</span>
+        <div class="grid gap-8 lg:grid-cols-2">
+          <div class="w-full border border-black px-6 py-6">
+            <div class="text-3xl">CLING FILM</div>
+            <div class="py-4 text-xs">
+              We recommend that you keep clinging film on your fresh tattoo for
+              the first three hours unless instructed otherwise by your artist.
+              You can reapply the film for the first night, to keep out bacteria.
+              However, it is important not to wrap it too tightly as the tattoo
+              needs to breathe and you don’t want to be sweating on the tattooed
+              area. Your tattoo it is a large open wound with no protective layer
+              on it.
             </div>
-            <div class="p-4 hidden text-sm " style="color:#190ea7" id="accordion-content-1">
-                <p class="pb-2">There are different ways of getting a design done. For myself, it has to be on the moment as such as prior the appointment. Creating a design on the spot is also where I can fully express creativity, understanding the concept and vision you have. I always do research and come with a design before we meet and it often comes alive after discussing it together. This means I do not send design before a booking.</p>
-                <p class="pb-2">I show the prepared design at the appointment day only.</p>
-                <p class="pb-2">I don’t send the design before the appointment!</p>
-                <p class="pb-2">On the day we will still be able to do changes and additions, and decide the best placement and size.</p>
-                <p class="pb-2">During the booking process via email, I always make sure to have all the details I need, so usually no modification or very little is required on the day.</p>
+            <div class="font-black">WHEN YOU REMOVE THE CLING FILM:</div>
+            <ul class="pl-5 text-xs" style="list-style-type: disc">
+              <li class="py-1">
+                Wash your tattoo with mild/non-scented soap immediately.
+              </li>
+              <li class="py-1">
+                Use your hands to rub off all the extra ink, blood, and plasma.
+              </li>
+              <li class="py-1">Do not rub it with a towel – it will hurt!</li>
+              <li class="py-1">
+                Tap dry very gently with a CLEAN towel or soft tissue.
+              </li>
+              <li class="py-1">
+                Wash your hands and apply a very thin layer of moisturizer to the
+                tattooed area.
+              </li>
+              <li class="py-1">
+                It is important not to use too much moisturizer as the tattoo
+                needs to breathe.
+              </li>
+              <lic lass="py-1">
+                When using the correct amount, the moisturizer should almost not
+                be visible after being smeared out on the area.
+              </li>
+              <li class="py-1">
+                Repeat this process 4-5 times daily for two weeks. If you feel any
+                discomfort or feel like something is going wrong, send me an email
+                with a picture.
+              </li>
+              <li class="py-1">
+                Make sure you go to the doctor if you have high fever or see any
+                signs of infection.
+              </li>
+            </ul>
+          </div>
+          <div class="w-full border border-black px-6 py-6">
+            <div class="text-3xl">ADHESIVE FILM</div>
+            <div class="cursive text-4xl">(second skin)</div>
+            <div class="py-4 text-xs">It is waterproof.</div>
+            <div class="py-4 text-xs">
+              Feel free to take showers with it (yay!) We recommend that you keep
+              the film on for 3-4 days. You might see discharges appearing and
+              your tattoo might look “smudged“ under second skin. It is totally
+              normal. If you bleed much or if there’s a lot of liquid under the
+              film, you should take it off immediately to avoid infection. We
+              recommend you only do this by applying lukewarm water on top of the
+              film, to loosen the adhesive. Don’t just pull it off, as it could
+              hurt your skin.
             </div>
+            <div class="font-black">
+              AFTER 3-4 DAYS PLEASE PEEL OFF THE SECOND SKIN AND SHOWER:
+            </div>
+            <ul class="pl-5 text-xs" style="list-style-type: disc">
+              <li class="py-1">
+                Wash your tattoo with mild/non-scented soap immediately (Your
+                tattoo might get “printed“ onto second skin when you peel it off.
+                It is normal too. Your tattoo is still there:))).
+              </li>
+              <li class="py-1">
+                Use your hands to rub off all the extra ink, blood, and plasma.
+              </li>
+              <li class="py-1">Do not rub it with a towel – it will hurt!</li>
+              <li class="py-1">
+                Tap dry very gently with a CLEAN towel or soft tissue.
+              </li>
+              <li class="py-1">
+                Wash your hands and apply a very thin layer of moisturizer to the
+                tattooed area.
+              </li>
+              <li class="py-1">
+                It is important not to use too much moisturizer as the tattoo
+                needs to breathe.
+              </li>
+              <li class="py-1">
+                When using the correct amount, the moisturizer should almost not
+                be visible after being smeared out on the area.
+              </li>
+              <li class="py-1">
+                Repeat this process 4-5 times daily for two weeks. If you feel any
+                discomfort or feel like something is going wrong, send me an email
+                with a picture.
+              </li>
+              <li class="py-1">
+                Make sure you go to the doctor if you have high fever or see any
+                signs of infection.
+              </li>
+            </ul>
+          </div>
+          <div class="w-full border border-black px-6 py-6">
+            <div class="text-3xl">ONE WEEK</div>
+            <div class="cursive text-4xl pt-4">after session</div>
+  
+            <div class="py-4 text-xs">
+              Scabs will start to form. Your tattoo might appear flaky.
+              <b>DON’T PICK AT THEM.</b>
+            </div>
+            <div class="py-4 text-xs">
+              You might pick the ink out of your skin and the tattoo will heal
+              poorly. Some flakes might appear to be black. It looks weird but it
+              is totally normal.
+            </div>
+            <div class="py-4 text-xs">
+              Your tattoo might feel itchy as the flakes keep forming.
+              <b>DON’T SCRATCH IT.</b> Same thing, you might damage your tattoo by
+              doing so. Gently pat or rub on it (with clean hands!)
+            </div>
+            <div class="py-4 text-xs">
+              Once again, keep your tattoo clean! Protective layer is forming, but
+              that doesn’t mean your tattoo is safe for your cat to lick, yet.
+            </div>
+          </div>
+          <div class="w-full border border-black px-6 py-6">
+            <div class="text-3xl">GENERAL RULES</div>
+            <div class="text-lg py-4">THE HEALING PROCESS WILL TAKE UP TO 4 WEEKS. PLEASE FOLLOW INSTRUCTIONS THROUGHOUT THIS PERIOD OF TIME AND BE PATIENT WITH YOUR SKIN.</div>
+            
+            <ul class="pl-5 text-xs" style="list-style-type: disc">
+              <li class="py-1">
+                Avoid direct sunlight on the new tattoo.
+  
+              </li>
+              <li class="py-1">
+                NO SUNSCREEN WHEN YOUR TATTOO IS STILL HEALING. (However, please always apply strong sunscreen on your tattoo AFTER it’s healed, if you are going to have sun exposure.)            </li>
+              <li class="py-1">Do not rub it with a towel – it will hurt!</li>
+              <li class="py-1">
+                Avoid soaking your tattoo in water – no bathing, no swimming, no surfing, no diving, no sauna, etc.            </li>
+              <li class="py-1">
+                Stop exercising for at least 3 days as your sweat can soak it too.If you have a pet, keep them away from your tattoo. Especially avoid contact with their fur and saliva.
+              </li>
+              <li class="py-1">
+                ALWAYS HANDLE YOUR NEW TATTOO WITH CLEAN HANDS. Ointment options: Cetaphil, Aquaphor, Vitamin A & D lotion. All non-scented. No vaseline. No Neosporin. No aloe vera. No oil based lotion.
+              </li>
+              <li class="py-1">
+                If you suspect your tattoo is getting infected, ASK A DOCTOR IMMEDIATELY.
+              </li>
+            </ul>
+          </div>
         </div>
-
-        <!-- FAQ 2 -->
+      </div>
+      <!--Gallery Section-->
+      <a
+        href="#gallery-placement"
+        id="gallery-button"
+        class="md:py-3 px-2 md:px-8 flex justify-center items-end"
+      >
+        <img src="src/assets/sec-img4_gallery.png" />
+        <!-- <svg
+          class="absolute md:w-12 lg:w-14 w-8 pt-10 md:pt-0 opacity-80"
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="100"
+          height="100"
+          viewBox="0 0 50 50"
+        >
+          <path
+            d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M37,26H26v11h-2V26H13v-2h11V13h2v11h11V26z"
+          ></path>
+        </svg> -->
+      </a>
+      <div id="gallery-placement" class="py-4 md:py-10"></div>
+      <button
+        id="gallery-next-button"
+        class="w-full bg-black py-6 text-white uppercase text-3xl hidden"
+      >
+        Gallery
+      </button>
+      <div
+        id="gallery-section"
+        class="grid grid-cols-2 md:grid-cols-4 gap-4 hidden mt-10  px-8"
+      >
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg resize-none"
+              src="src/assets/tattoos/IMG_4547.JPG"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <img
+              class="h-auto max-w-full rounded-lg resize-none"
+              src="src/assets/tattoos/IMG_4567.JPG"
+              alt=""
+            />
+          </div>
+          <div class="hidden md:block">
+            <img
+              class="h-auto max-w-full rounded-lg resize-none"
+              src="src/assets/tattoos/IMG_4557.JPG"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div class="hidden md:block">
+            <img
+              class=" h-5/6 max-w-full rounded-lg resize-none"
+              src="src/assets/tattoos/IMG_4561.JPG"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg resize-none mt-16 md:mt-0"
+              src="src/assets/tattoos/IMG_4549.JPG"
+              alt=""
+            />
+          </div>
+          <div class="hidden md:block">
+            <img
+              class="h-auto max-w-full rounded-lg resize-none"
+              src="src/assets/tattoos/IMG_4564.JPG"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg resize-none"
+              src="src/assets/tattoos/IMG_4556.JPG"
+              alt=""
+            />
+          </div>
+          <div class="">
+            <img
+              class="h-auto max-w-full rounded-lg resize-none"
+              src="src/assets/tattoos/IMG_4564.JPG"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg resize-none"
+              src="src/assets/tattoos/IMG_4548.JPG"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="grid gap-4">
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg resize-none"
+              src="src/assets/tattoos/IMG_4566.JPG"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg resize-none"
+              src="src/assets/tattoos/IMG_4554.JPG"
+              alt=""
+            />
+          </div>
+          <div>
+            <img
+              class="h-auto max-w-full rounded-lg resize-none"
+              src="src/assets/tattoos/IMG_4550.JPG"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!--FAQ Section-->
+      <a
+        id="faq-button"
+        href="#faq-placement"
+        class="md:py-3 px-8 pt-6 flex justify-center items-end"
+      >
+        <img src="src/assets/sec-img5_faq_.png" />
+        <!-- <svg
+          class="absolute md:w-12 lg:w-14 w-8 pt-[-4] opacity-80 "
+          xmlns="http://www.w3.org/2000/svg"
+          x="0px"
+          y="0px"
+          width="100"
+          height="100"
+          viewBox="0 0 50 50"
+        >
+          <path
+            d="M25,2C12.317,2,2,12.317,2,25s10.317,23,23,23s23-10.317,23-23S37.683,2,25,2z M37,26H26v11h-2V26H13v-2h11V13h2v11h11V26z"
+          ></path>
+        </svg> -->
+      </a>
+      <div id="faq-placement" class="py-4 md:py-10"></div>
+      <button
+        id="faq-next-button"
+        class="w-full bg-black py-6 text-white uppercase text-3xl hidden"
+      >
+        FAQ
+      </button>
+      <div id="faq-section" class="hidden py-16">
+        <div class="max-w-md mx-auto mt-24">
+          <!-- FAQ 1 -->
+          <div class="overflow-hidden">
+              <div class=" p-4 cursor-pointer flex justify-between items-center" onclick="toggleAccordion(1)">
+                  <h3 class="font-semibold text-lg">WHEN CAN I SEE THE DESIGN?</h3>
+                  <span class="transform transition-transform" id="arrow-icon-1">▼</span>
+              </div>
+              <div class="p-4 hidden text-sm " style="color:#190ea7" id="accordion-content-1">
+                  <p class="pb-2">There are different ways of getting a design done. For myself, it has to be on the moment as such as prior the appointment. Creating a design on the spot is also where I can fully express creativity, understanding the concept and vision you have. I always do research and come with a design before we meet and it often comes alive after discussing it together. This means I do not send design before a booking.</p>
+                  <p class="pb-2">I show the prepared design at the appointment day only.</p>
+                  <p class="pb-2">I don’t send the design before the appointment!</p>
+                  <p class="pb-2">On the day we will still be able to do changes and additions, and decide the best placement and size.</p>
+                  <p class="pb-2">During the booking process via email, I always make sure to have all the details I need, so usually no modification or very little is required on the day.</p>
+              </div>
+          </div>
+  
+          <!-- FAQ 2 -->
+          <div class="overflow-hidden">
+            <div class=" p-4 cursor-pointer flex justify-between items-center" onclick="toggleAccordion(2)">
+                <h3 class="font-semibold text-lg">CAN I GET A TATTOO IF I AM UNDER 18?</h3>
+                <span class="transform transition-transform" id="arrow-icon-2">▼</span>
+            </div>
+            <div class="p-4 hidden text-sm " style="color:#190ea7" id="accordion-content-2">
+                <p class="pb-2">No, not under any circumstance</p>
+            </div>
+          </div>
+  
+        <!-- FAQ 3 -->
         <div class="overflow-hidden">
-          <div class=" p-4 cursor-pointer flex justify-between items-center" onclick="toggleAccordion(2)">
-              <h3 class="font-semibold text-lg">CAN I GET A TATTOO IF I AM UNDER 18?</h3>
-              <span class="transform transition-transform" id="arrow-icon-2">▼</span>
+          <div class=" p-4 cursor-pointer flex justify-between items-center" onclick="toggleAccordion(3)">
+              <h3 class="font-semibold text-lg">PAYMENTS AND DEPOSITS</h3>
+              <span class="transform transition-transform" id="arrow-icon-3">▼</span>
           </div>
-          <div class="p-4 hidden text-sm " style="color:#190ea7" id="accordion-content-2">
-              <p class="pb-2">No, not under any circumstance</p>
+          <div class="p-4 hidden text-sm " style="color:#190ea7" id="accordion-content-3">
+              <p class="pb-2">The security deposit is 200$ and non-refundable. - This deposit is dedicated from the total cost of the tattoo. The remaining balance is due the day of the appointment.</p>
+              <p class="pb-2">Without the booking fee the appointment is not saved and will be removed after a while. This fee is not refundable but I offer to move the appointment once without losing it (if said at least 14 days before).</p>
+              <p class="pb-2">This can be done once, but on the second time of need of reschedule, a new booking fee will need to be paid again.</p>
+              <p class="py-4">You can pay with or cash or Venmo</p>
           </div>
         </div>
-
-      <!-- FAQ 3 -->
-      <div class="overflow-hidden">
-        <div class=" p-4 cursor-pointer flex justify-between items-center" onclick="toggleAccordion(3)">
-            <h3 class="font-semibold text-lg">PAYMENTS AND DEPOSITS</h3>
-            <span class="transform transition-transform" id="arrow-icon-3">▼</span>
-        </div>
-        <div class="p-4 hidden text-sm " style="color:#190ea7" id="accordion-content-3">
-            <p class="pb-2">The security deposit is 200$ and non-refundable. - This deposit is dedicated from the total cost of the tattoo. The remaining balance is due the day of the appointment.</p>
-            <p class="pb-2">Without the booking fee the appointment is not saved and will be removed after a while. This fee is not refundable but I offer to move the appointment once without losing it (if said at least 14 days before).</p>
-            <p class="pb-2">This can be done once, but on the second time of need of reschedule, a new booking fee will need to be paid again.</p>
-            <p class="py-4">You can pay with or cash or Venmo</p>
+  
+        <!-- FAQ 4 -->
+        <div class="overflow-hidden">
+          <div class=" p-4 cursor-pointer flex justify-between items-center" onclick="toggleAccordion(4)">
+              <h3 class="font-semibold text-lg">CAN I GET A RETOUCH?</h3>
+              <span class="transform transition-transform" id="arrow-icon-4">▼</span>
+          </div>
+          <div class="p-4 hidden text-sm " style="color:#190ea7" id="accordion-content-4">
+              <p class="pb-2">Your tattoo should only be recoloured if necessary, so you have to send a picture via email if you think your tattoo needs a redrawing. You can get a retouch for free in the following 3 months after your appointment, but only if the instructions given after finishing have been complied and if strictly necessary.</p>
+              <p class="pb-2">Otherwise the retouch will be charged of a minimum of 50$ or more depending of how much time is needed.</p>
+          </div>
         </div>
       </div>
-
-      <!-- FAQ 4 -->
-      <div class="overflow-hidden">
-        <div class=" p-4 cursor-pointer flex justify-between items-center" onclick="toggleAccordion(4)">
-            <h3 class="font-semibold text-lg">CAN I GET A RETOUCH?</h3>
-            <span class="transform transition-transform" id="arrow-icon-4">▼</span>
-        </div>
-        <div class="p-4 hidden text-sm " style="color:#190ea7" id="accordion-content-4">
-            <p class="pb-2">Your tattoo should only be recoloured if necessary, so you have to send a picture via email if you think your tattoo needs a redrawing. You can get a retouch for free in the following 3 months after your appointment, but only if the instructions given after finishing have been complied and if strictly necessary.</p>
-            <p class="pb-2">Otherwise the retouch will be charged of a minimum of 50$ or more depending of how much time is needed.</p>
-        </div>
       </div>
-    </div>
-    </div>
-    <!--Form-->
-    <div id="form-section" class="">
-      <iframe
-        id="JotFormIFrame-232761660066153"
-        title="Tattoo Request Form"
-        onload="window.parent.scrollTo(0,0)"
-        allowtransparency="true"
-        allowfullscreen="true"
-        allow="geolocation; microphone; camera"
-        src="https://form.jotform.com/232761660066153"
-        frameborder="0"
-        style="min-width: 100%; max-width: 100%; height: 539px; border: none"
-        scrolling="no"
-      ></iframe>
-      <script type="text/javascript">
-        var ifr = document.getElementById('JotFormIFrame-232761660066153');
-        if (ifr) {
-          var src = ifr.src;
-          var iframeParams = [];
-          if (window.location.href && window.location.href.indexOf('?') > -1) {
-            iframeParams = iframeParams.concat(
-              window.location.href
-                .substr(window.location.href.indexOf('?') + 1)
-                .split('&')
-            );
+      <!--Form-->
+      <div id="form-section" class="">
+        <iframe
+          id="JotFormIFrame-232761660066153"
+          title="Tattoo Request Form"
+          onload="window.parent.scrollTo(0,0)"
+          allowtransparency="true"
+          allowfullscreen="true"
+          allow="geolocation; microphone; camera"
+          src="https://form.jotform.com/232761660066153"
+          frameborder="0"
+          style="min-width: 100%; max-width: 100%; height: 539px; border: none"
+          scrolling="no"
+        ></iframe>
+        <script type="text/javascript">
+          var ifr = document.getElementById('JotFormIFrame-232761660066153');
+          if (ifr) {
+            var src = ifr.src;
+            var iframeParams = [];
+            if (window.location.href && window.location.href.indexOf('?') > -1) {
+              iframeParams = iframeParams.concat(
+                window.location.href
+                  .substr(window.location.href.indexOf('?') + 1)
+                  .split('&')
+              );
+            }
+            if (src && src.indexOf('?') > -1) {
+              iframeParams = iframeParams.concat(
+                src.substr(src.indexOf('?') + 1).split('&')
+              );
+              src = src.substr(0, src.indexOf('?'));
+            }
+            iframeParams.push('isIframeEmbed=1');
+            ifr.src = src + '?' + iframeParams.join('&');
           }
-          if (src && src.indexOf('?') > -1) {
-            iframeParams = iframeParams.concat(
-              src.substr(src.indexOf('?') + 1).split('&')
-            );
-            src = src.substr(0, src.indexOf('?'));
-          }
-          iframeParams.push('isIframeEmbed=1');
-          ifr.src = src + '?' + iframeParams.join('&');
-        }
-        window.handleIFrameMessage = function (e) {
-          if (typeof e.data === 'object') {
-            return;
-          }
-          var args = e.data.split(':');
-          if (args.length > 2) {
-            iframe = document.getElementById(
-              'JotFormIFrame-' + args[args.length - 1]
-            );
-          } else {
-            iframe = document.getElementById('JotFormIFrame');
-          }
-          if (!iframe) {
-            return;
-          }
-          switch (args[0]) {
-            case 'scrollIntoView':
-              iframe.scrollIntoView();
-              break;
-            case 'setHeight':
-              iframe.style.height = args[1] + 'px';
-              if (
-                !isNaN(args[1]) &&
-                parseInt(iframe.style.minHeight) > parseInt(args[1])
-              ) {
-                iframe.style.minHeight = args[1] + 'px';
-              }
-              break;
-            case 'collapseErrorPage':
-              if (iframe.clientHeight > window.innerHeight) {
-                iframe.style.height = window.innerHeight + 'px';
-              }
-              break;
-            case 'reloadPage':
-              window.location.reload();
-              break;
-            case 'loadScript':
-              if (
-                !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro'])
-              ) {
+          window.handleIFrameMessage = function (e) {
+            if (typeof e.data === 'object') {
+              return;
+            }
+            var args = e.data.split(':');
+            if (args.length > 2) {
+              iframe = document.getElementById(
+                'JotFormIFrame-' + args[args.length - 1]
+              );
+            } else {
+              iframe = document.getElementById('JotFormIFrame');
+            }
+            if (!iframe) {
+              return;
+            }
+            switch (args[0]) {
+              case 'scrollIntoView':
+                iframe.scrollIntoView();
                 break;
-              }
-              var src = args[1];
-              if (args.length > 3) {
-                src = args[1] + ':' + args[2];
-              }
-              var script = document.createElement('script');
-              script.src = src;
-              script.type = 'text/javascript';
-              document.body.appendChild(script);
-              break;
-            case 'exitFullscreen':
-              if (window.document.exitFullscreen)
-                window.document.exitFullscreen();
-              else if (window.document.mozCancelFullScreen)
-                window.document.mozCancelFullScreen();
-              else if (window.document.mozCancelFullscreen)
-                window.document.mozCancelFullScreen();
-              else if (window.document.webkitExitFullscreen)
-                window.document.webkitExitFullscreen();
-              else if (window.document.msExitFullscreen)
-                window.document.msExitFullscreen();
-              break;
+              case 'setHeight':
+                iframe.style.height = args[1] + 'px';
+                if (
+                  !isNaN(args[1]) &&
+                  parseInt(iframe.style.minHeight) > parseInt(args[1])
+                ) {
+                  iframe.style.minHeight = args[1] + 'px';
+                }
+                break;
+              case 'collapseErrorPage':
+                if (iframe.clientHeight > window.innerHeight) {
+                  iframe.style.height = window.innerHeight + 'px';
+                }
+                break;
+              case 'reloadPage':
+                window.location.reload();
+                break;
+              case 'loadScript':
+                if (
+                  !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro'])
+                ) {
+                  break;
+                }
+                var src = args[1];
+                if (args.length > 3) {
+                  src = args[1] + ':' + args[2];
+                }
+                var script = document.createElement('script');
+                script.src = src;
+                script.type = 'text/javascript';
+                document.body.appendChild(script);
+                break;
+              case 'exitFullscreen':
+                if (window.document.exitFullscreen)
+                  window.document.exitFullscreen();
+                else if (window.document.mozCancelFullScreen)
+                  window.document.mozCancelFullScreen();
+                else if (window.document.mozCancelFullscreen)
+                  window.document.mozCancelFullScreen();
+                else if (window.document.webkitExitFullscreen)
+                  window.document.webkitExitFullscreen();
+                else if (window.document.msExitFullscreen)
+                  window.document.msExitFullscreen();
+                break;
+            }
+            var isJotForm = e.origin.indexOf('jotform') > -1 ? true : false;
+            if (
+              isJotForm &&
+              'contentWindow' in iframe &&
+              'postMessage' in iframe.contentWindow
+            ) {
+              var urls = {
+                docurl: encodeURIComponent(document.URL),
+                referrer: encodeURIComponent(document.referrer),
+              };
+              iframe.contentWindow.postMessage(
+                JSON.stringify({ type: 'urls', value: urls }),
+                '*'
+              );
+            }
+          };
+          window.isPermitted = function (originUrl, whitelisted_domains) {
+            var url = document.createElement('a');
+            url.href = originUrl;
+            var hostname = url.hostname;
+            var result = false;
+            if (typeof hostname !== 'undefined') {
+              whitelisted_domains.forEach(function (element) {
+                if (
+                  hostname.slice(-1 * element.length - 1) ===
+                    '.'.concat(element) ||
+                  hostname === element
+                ) {
+                  result = true;
+                }
+              });
+              return result;
+            }
+          };
+          if (window.addEventListener) {
+            window.addEventListener('message', handleIFrameMessage, false);
+          } else if (window.attachEvent) {
+            window.attachEvent('onmessage', handleIFrameMessage);
           }
-          var isJotForm = e.origin.indexOf('jotform') > -1 ? true : false;
-          if (
-            isJotForm &&
-            'contentWindow' in iframe &&
-            'postMessage' in iframe.contentWindow
-          ) {
-            var urls = {
-              docurl: encodeURIComponent(document.URL),
-              referrer: encodeURIComponent(document.referrer),
-            };
-            iframe.contentWindow.postMessage(
-              JSON.stringify({ type: 'urls', value: urls }),
-              '*'
-            );
-          }
-        };
-        window.isPermitted = function (originUrl, whitelisted_domains) {
-          var url = document.createElement('a');
-          url.href = originUrl;
-          var hostname = url.hostname;
-          var result = false;
-          if (typeof hostname !== 'undefined') {
-            whitelisted_domains.forEach(function (element) {
-              if (
-                hostname.slice(-1 * element.length - 1) ===
-                  '.'.concat(element) ||
-                hostname === element
-              ) {
-                result = true;
-              }
-            });
-            return result;
-          }
-        };
-        if (window.addEventListener) {
-          window.addEventListener('message', handleIFrameMessage, false);
-        } else if (window.attachEvent) {
-          window.attachEvent('onmessage', handleIFrameMessage);
-        }
-      </script>
+        </script>
+      </div>
     </div>
+    
     <footer class="w-screen border-t bottom-0">
       <div class="bg-black mx-auto flex flex-col items-center">
         <div class="p-6 text-white">&copy; Created by mayaellington.co</div>
